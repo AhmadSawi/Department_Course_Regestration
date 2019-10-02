@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="642.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceduleScreenController">
+   <children>
+      <Pane layoutX="-154.0" layoutY="-139.0" onDragDetected="#runPressed" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="40.0" layoutY="66.0" mnemonicParsing="false" onAction="#runPressed" opacity="0.9" prefHeight="41.0" prefWidth="318.0" text="RUN" />
+            <TableView fx:id="table" layoutX="27.0" layoutY="141.0" opacity="0.95" prefHeight="341.0" prefWidth="750.0">
+              <columns>
+                  <TableColumn fx:id="classIDCol" prefWidth="73.0" text="Class ID" />
+                  <TableColumn fx:id="instCol" prefWidth="170.0" text="Instructor" />
+                  <TableColumn fx:id="courseCol" prefWidth="168.0" text="Course ID" />
+                  <TableColumn fx:id="sectionCol" prefWidth="61.487274169921875" text="Section" />
+                  <TableColumn fx:id="timeCol" prefWidth="146.51272583007812" text="Time Slot" />
+                  <TableColumn fx:id="roomCol" minWidth="0.0" prefWidth="130.11376953125" text="Room" />
+              </columns>
+               <effect>
+                  <Glow />
+               </effect>
+            </TableView>
+            <Button fx:id="exit" layoutX="688.0" layoutY="500.0" mnemonicParsing="false" onAction="#exitPressed" opacity="0.85" prefHeight="101.0" prefWidth="89.0" text="Exit" />
+            <Label layoutX="40.0" layoutY="20.0" prefHeight="17.0" prefWidth="184.0" text="Number of generations to run" />
+            <TextField fx:id="generationsTF" layoutX="235.0" layoutY="15.0" prefHeight="27.0" prefWidth="116.0" text="10" />
+            <TextField fx:id="showTF" layoutX="576.0" layoutY="15.0" prefHeight="27.0" prefWidth="137.0" text="0" />
+            <Label layoutX="450.0" layoutY="20.0" text="show generation" />
+            <Button layoutX="424.0" layoutY="66.0" mnemonicParsing="false" onAction="#showPressed" opacity="0.9" prefHeight="41.0" prefWidth="318.0" text="SHOW" />
+            <Label layoutX="78.0" layoutY="534.0" text="Hard constraint fitness: " />
+            <Label layoutX="75.0" layoutY="570.0" text="Soft Constraint Fitness:" />
+            <TextField fx:id="hardTF" editable="false" layoutX="290.0" layoutY="529.0" />
+            <TextField fx:id="softTF" editable="false" layoutX="290.0" layoutY="565.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+Courses
+
+C - ENCS434 - Artificial Intelligence - 4 - 45
+C - ENCS333 - Integrated Circuits - 4 - 45
+C - ENCS230 - Digital Systems - 4 - 45
+C - ENEE236 - Electronics - 2 - 45
+C - ENCS555 - Advanced - 2 - 45
+C - ENCS111 - Digital Systems - 4 - 45
+C - ENEE112 - Electronics - 2 - 45
+C - ENCS113 - Advanced - 2 - 45
+L - ENCS411 - micro Lab - 1 - 18
+L - ENEE4103 - Circuits lab - 1 - 15

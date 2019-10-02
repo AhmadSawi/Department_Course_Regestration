@@ -1,0 +1,14 @@
+Rooms
+
+Masri
+Masri109 - 100
+Masri108 - 45
+Masri201 - 45
+Masri105 - 45
+Masri104 - 45
+Masri206 - 45
+Masri107 - 45
+
+Aqqad
+Aqqad250 - 200
+Aqqad305 - 30
